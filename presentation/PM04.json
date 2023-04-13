@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "PM04",
+    "sourceBusinessModel" : "businessModel:BM04",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PM04.D_CHANNELS"
+    }, {
+      "name" : "presentationTable:PM04.F_SALES"
+    } ]
+  }
+}

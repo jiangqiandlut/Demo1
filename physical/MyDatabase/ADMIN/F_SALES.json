@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "F_SALES",
+    "sourceTable" : "physicalTable:MyDatabase.ADMIN.SALES",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.ADMIN.D_CHANNELS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.ADMIN.F_SALES.CHANNEL_ID",
+        "rightColumn" : "physicalColumn:MyDatabase.ADMIN.D_CHANNELS.CHANNEL_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}
